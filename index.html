@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Real-Time Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  </head>
+  <body class="flex justify-center items-center h-[100vh] bg-[#f0f0f0] m-[0]">
+    <div
+      class="clock w-[300px] h-[300px] border-[20px] border-solid border-[purple] rounded-full absolute p-[20px] bg-white shadow-2xs"
+    >
+      <div class="clock-face relative w-[100%] h-[100%] translate-y-[-3px]">
+        <div
+          class="number number1 absolute text-[24px] top-[20%] left-[85%] translate[-50%, -50%]"
+        >
+          1
+        </div>
+        <div
+          class="number number2 absolute text-[24px] top-[35%] left-[92%] translate[-50%, -50%]"
+        >
+          2
+        </div>
+        <div
+          class="number number3 absolute text-[24px] top-[50%] left-[97%] translate[-50%, -50%]"
+        >
+          3
+        </div>
+        <div
+          class="number number4 absolute text-[24px] top-[65%] left-[92%] translate[-50%, -50%]"
+        >
+          4
+        </div>
+        <div
+          class="number number5 absolute text-[24px] top-[80%] left-[85%] translate[-50%, -50%]"
+        >
+          5
+        </div>
+        <div
+          class="number number6 absolute text-[24px] top-[85%] left-[50%] translate[-50%, -50%]"
+        >
+          6
+        </div>
+        <div
+          class="number number7 absolute text-[24px] top-[80%] left-[15%] translate[-50%, -50%]"
+        >
+          7
+        </div>
+        <div
+          class="number number8 absolute text-[24px] top-[65%] left-[8%] translate[-50%, -50%]"
+        >
+          8
+        </div>
+        <div
+          class="number number9 absolute text-[24px] top-[50%] left-[3%] translate[-50%, -50%]"
+        >
+          9
+        </div>
+        <div
+          class="number number10 absolute text-[24px] top-[35%] left-[8%] translate[-50%, -50%]"
+        >
+          10
+        </div>
+        <div
+          class="number number11 absolute text-[24px] top-[20%] left-[15%] translate[-50%, -50%]"
+        >
+          11
+        </div>
+        <div
+          class="number number12 absolute text-[24px] top-[15%] left-[50%] translate[-50%, -50%]"
+        >
+          12
+        </div>
+        <div
+          class="hand hour-hand w-[50%] bg-black absolute top-[50%] rotate[90deg] transition-all duration-300 ease-[cubic-bezier(0.1,2.7,0.58,1)] h-[6px]"
+          id="hour-hand"
+        ></div>
+        <div
+          class="hand minute-hand h-[4px] hand hour-hand w-[50%] bg-black absolute top-[50%] rotate-90 transition-all duration-300 ease-[cubic-bezier(0.1,2.7,0.58,1)]"
+          id="minute-hand"
+        ></div>
+        <div
+          class="hand second-hand hand hour-hand w-[50%] bg-black absolute top-[50%] rotate[90deg] transition-all duration-300 ease-[cubic-bezier(0.1,2.7,0.58,1)] h-[2px] bg-red"
+          id="second-hand"
+        ></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
